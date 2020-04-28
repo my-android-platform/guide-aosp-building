@@ -43,8 +43,8 @@ repo sync
 
 ## Topic
 
-1. Repo (commands, version and issues).
-2. AOSP Building (commands, description modules, issues).
-3. Android platform.
-4. Hardware abstract layer.
-5. Kernel.
+1. [Repo (commands, version and issues).](https://github.com/my-android-platform/guide-aosp-building/tree/master/repo)
+2. [AOSP Building (commands, description modules, issues).](https://github.com/my-android-platform/guide-aosp-building/tree/master/aosp_building)
+3. [Android platform.](https://github.com/my-android-platform/guide-aosp-building/tree/master/android_platform)
+4. [Hardware abstract layer.](https://github.com/my-android-platform/guide-aosp-building/tree/master/hal)
+5. [Kernel.](https://github.com/my-android-platform/guide-aosp-building/tree/master/kernel)
