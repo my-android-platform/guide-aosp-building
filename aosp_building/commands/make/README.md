@@ -1,7 +1,8 @@
 # Guide for AOSP commands `make`
 To run this commands, exec `source build/envsetup.sh`
 [See more info about build usage and concepts.](https://android.googlesource.com/platform/build/+/refs/heads/master/Usage.txt)
-## Common goals
+## Common targets
+###### m help
     clean                   (aka clobber) equivalent to rm -rf out/
     checkbuild              Build every module defined in the source tree
     droid                   Default target
@@ -28,9 +29,24 @@ To run this commands, exec `source build/envsetup.sh`
     onod                    Quickly rebuild the odm image from built packages
                             Stands for "ODM, NO Dependencies"
 
+## Target
+All target is declare on [main.mk](https://android.googlesource.com/platform/build/+/master/core/main.mk)
+TODO: Write a tools copy all targets to the file txt
+
+    bootimage
+    bootimage_debug
+    services
+    platform
+    update-api
+## Module
+###### List all module available
+```bash
+make modules
+```
+
 ## ccache
-Use for fast building aosp.
-The ccache have already removed on master, but it's still can be used from local. But if facing error while buiding, disable the ccache.
+Use for fast building aosp, about 35%.
+The ccache have already removed on master, [see more](https://android-review.googlesource.com/c/platform/build/+/657884). But it's still can be used from local. But if facing error while buiding, disable the ccache.
 
 ###### Download ccache
 - [Download ccache](https://github.com/my-android-platform/guide-aosp-building/tree/master/aosp_building/commands/make/ccache)
