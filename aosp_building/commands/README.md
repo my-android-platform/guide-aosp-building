@@ -4,7 +4,7 @@ To run these commands bellow, exec `source build/envsetup.sh`
 - **`lunch`**:      lunch <product_name>-<build_variant> Selects <product_name> as the product to build, and <build_variant> as the variant to build, and stores those selections in the environment to be read by subsequent invocations of 'm' etc.
 - **`tapas`**:      tapas [<App1> <App2> ...] [arm|x86|mips|arm64|x86_64|mips64] [eng|userdebug|user]
 - **`croot`**:      Changes directory to the top of the tree, or a subdirectory thereof.
-- **`m`**:          Makes from the top of the tree.
+- **`m`**:          Makes from the top of the tree. [See more](https://github.com/my-android-platform/guide-aosp-building/tree/master/aosp_building/commands/make).
 - **`mm1`**:        Builds all of the modules in the current directory, but not their dependencies.
 - **`mmm`**:        Builds all of the modules in the supplied directories, but not their dependencies. To limit the modules being built use the syntax: `mmm dir/:target1,target2`.
 - **`mma`**:        Builds all of the modules in the current directory, and their dependencies.
