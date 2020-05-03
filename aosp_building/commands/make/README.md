@@ -29,20 +29,49 @@ To run this commands, exec `source build/envsetup.sh`
     onod                    Quickly rebuild the odm image from built packages
                             Stands for "ODM, NO Dependencies"
 
-## Target
+## Targets
 All target is declare on [main.mk](https://android.googlesource.com/platform/build/+/master/core/main.mk)
 TODO: Write a tools copy all targets to the file txt
 
+    dist
+    dist_files
+    ramdisk
+    ramdisk_debug
+    ramdisk_test_harness
+    vendor_ramdisk_debug
+    userdataimage
+    cacheimage
+    bptimage
+    vendorimage
+    vendorbootimage
+    vendorbootimage_debug
+    productimage
+    systemextimage
+    odmimage
+    systemotherimage
+    superimage_empty
     bootimage
     bootimage_debug
-    services
-    platform
-    update-api
+    bootimage_test_harness
+    javac-check             Run all java compilations that use javac. use "javac-check-{target package}" to run java compilations only package.
+    findbugs
+    findlsdumps
+    vbmetaimage
+    apps_only               Only build apps and not the full system by default.
+    update-api              
+    clean-dex-files         Clean files rule in 'out' dir.
+    droidcore               Build files and then package it into the rom formats.
+    docs
 ## Module
 ###### List all module available
 ```bash
 make modules
 ```
+###### List common modules
+    services                Build system services, output is file "services.odex"
+    framework               Build all framework, output is folder "system"
+    platform                Build java platform, this module include module framework above, output is file "platform.zip"
+    sdk                     Build SDK. See https://android.googlesource.com/platform/sdk/+/master/docs/howto_build_SDK.txt
 
 ## ccache
 Use for fast building aosp, about 35%.
