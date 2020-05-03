@@ -71,7 +71,7 @@ make modules
     services                Build system services, output is file "services.odex"
     framework               Build all framework, output is folder "system"
     platform                Build java platform, this module include module framework above, output is file "platform.zip"
-    sdk                     Build SDK. See https://android.googlesource.com/platform/sdk/+/master/docs/howto_build_SDK.txt
+    sdk                     Build SDK, the lunch target must not be TARGET_BUILD_TYPE=debug. See https://android.googlesource.com/platform/sdk/+/master/docs/howto_build_SDK.txt
 
 ## ccache
 Use for fast building aosp, about 35%.
