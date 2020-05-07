@@ -1,6 +1,8 @@
 # Guide for AOSP
 This guideline help controll AOSP source
 
+## Android build system document
+- [Build system](https://android.googlesource.com/platform/build/+/refs/heads/master/core/build-system.html)
 
 ## Topics
 - [AOSP commands](https://github.com/my-android-platform/guide-aosp-building/tree/master/aosp_building/commands)
