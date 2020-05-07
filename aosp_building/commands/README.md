@@ -1,5 +1,6 @@
 # Guide for AOSP commands
 To run these commands bellow, exec `source build/envsetup.sh`
+To edit out dir, exec: `export OUT_DIR_COMMON_BASE=<path>`
 ## Common commands
 - **`lunch`**:      lunch <product_name>-<build_variant> Selects <product_name> as the product to build, and <build_variant> as the variant to build, and stores those selections in the environment to be read by subsequent invocations of 'm' etc.
 - **`tapas`**:      tapas [<App1> <App2> ...] [arm|x86|mips|arm64|x86_64|mips64] [eng|userdebug|user]
@@ -23,3 +24,6 @@ To run these commands bellow, exec `source build/envsetup.sh`
 - **`gomod`**:      Go to the directory containing a module. Must call `refreshmod` before use it.
 - **`pathmod`**:    Get the directory containing a module.
 - **`refreshmod`**: Refresh list of modules for `allmod/gomod`.
+## Topics
+- [make](https://github.com/my-android-platform/guide-aosp-building/tree/master/aosp_building/commands/make).
+- [lunch](https://github.com/my-android-platform/guide-aosp-building/tree/master/aosp_building/commands/lunch).
