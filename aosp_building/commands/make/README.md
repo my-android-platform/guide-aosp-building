@@ -4,6 +4,7 @@ To run this commands, exec `source build/envsetup.sh`
 ## Common targets
 ###### m help
     clean                   (aka clobber) equivalent to rm -rf out/
+    installclean            Clean files installed from previous build. Use this when try re-build on another target, flavor.
     checkbuild              Build every module defined in the source tree
     droid                   Default target
     nothing                 Do not build anything, just parse and validate the build structure
